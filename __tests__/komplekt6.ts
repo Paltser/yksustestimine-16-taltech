@@ -32,3 +32,10 @@ test('multiple symbols input', ()=>{
     calcobj.pressButton('2');
     expect(calcobj.getPanelContents()).toBe("32");
 });
+
+test('multiple symbols input', ()=>{
+    calcobj.pressButton('7');
+    calcobj.pressButton('8');
+    calcobj.pressButton('9');
+    expect(calcobj.getPanelContents()).toBe("789");
+});

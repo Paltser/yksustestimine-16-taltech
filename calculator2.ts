@@ -12,6 +12,7 @@ class Calculator {
     pressButton(button: string): void {
         this.panelContents += button;
     }
+
 }
 
 export{
